@@ -207,6 +207,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"something-cool@workspace:packages/something-cool":
+  version: 0.0.0-use.local
+  resolution: "something-cool@workspace:packages/something-cool"
+  dependencies:
+    "@types/node": "npm:^20.11.16"
+    shx: "npm:^0.3.4"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "supports-preserve-symlinks-flag@npm:^1.0.0":
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
@@ -251,9 +261,5 @@ __metadata:
 "yarn-broker-typescript@workspace:.":
   version: 0.0.0-use.local
   resolution: "yarn-broker-typescript@workspace:."
-  dependencies:
-    "@types/node": "npm:^20.11.16"
-    shx: "npm:^0.3.4"
-    typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
