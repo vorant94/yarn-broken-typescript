@@ -1,4 +1,18 @@
 {
   "name": "yarn-broker-typescript",
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node dist/main.js",
+    "start:watch": "node --watch dist/main.js",
+    "clean": "shx rm -rf dist",
+    "build": "yarn clean && tsc --build",
+    "build:watch": "tsc --build --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  }
 }
